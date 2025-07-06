@@ -1,12 +1,15 @@
 const mysql = require("mysql2");
+
 const connection = mysql.createConnection({
-  host: "mysql.railway.internal",
+  host: "localhost",
   user: "root",
-  password: "iJuQYTarMMhwsXtGPihfzhWzbTsFGlzF",
-  database: "railway"
+  password: "tony",       
+  database: "medical_db"
 });
+
 connection.connect((err) => {
   if (err) throw err;
   console.log("Connected to MySQL");
 });
+
 module.exports = connection;
