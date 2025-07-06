@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Medical Records</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🩺 Medical Records System</h1>
+
+  <form id="patientForm">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="number" name="age" placeholder="Age" required />
+    <input type="text" name="gender" placeholder="Gender" required />
+    <input type="text" name="bloodGroup" placeholder="Blood Group" />
+    <input type="text" name="phone" placeholder="Phone" required />
+    <input type="date" name="date" required />
+    <input type="text" name="doctor" placeholder="Assigned Doctor" />
+    <textarea name="history" placeholder="Medical History"></textarea>
+    <button type="submit">➕ Add Patient</button>
+  </form>
+
+  <input type="text" id="searchInput" placeholder="🔍 Search patients..." />
+
+  <ul id="patientList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
